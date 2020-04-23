@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=https://github.com/nic-bes/my-first-webpage.git, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            /* Centre the form on the page */
+            margin: 0 auto;
+            width: 400px;
+            /* Form outline */
+            padding: 1em;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        form li + li {
+            margin-top: 1em;
+        }
+        label {
+            /* Uniform size & alignment */
+            display: inline-block;
+            width: 90px;
+            text align: right;
+        }
+        input,
+        textarea {
+            /* To make sure that all text fields have the same font settings
+            By default, textareas have a monospace font */
+            font: 1em sans-serif;
+            /* Uniform text field size */
+            width: 300px;
+            box-sizing: border-box;
+            /* Match form field borders */
+            border: 1px solid #999;
+        }
+        input:focus,
+        textarea:focus {
+            /* Additional highligh for focused elements */
+            border-color: #000;
+        }
+        textarea{
+            /* Align multiline text fields with their labels */
+            vertical-align: top;
+            /* Provide space to type some text */
+            height: 5em; 
+        }
+
+        .button {
+            /* Align buttons with the text fields */
+            padding-left: 90px; /* same size as the label elements */
+        }
+
+        button {
+            /* This extra margin represents roughly the same space as the space between the labels and their text fields */
+            margin-left: .5em;
+        }
+    </style>
+</head>
+<body>
+<!-- html elements list grouped as block elements then inline elements -->
+<!-- headings --> 
+<h1>I am an h1</h1>
+
+<h2>I am an h2</h2>
+
+<h3>I am an h3</h3>
+
+<h4>I am an h4</h4>
+
+<h5>I am an h5</h5>
+
+<h6>I am an h6</h6>
+<!-- displaying text -->
+<p>
+<span>
+<q>
+<code>
+<br>
+<!-- compartmentalisation -->
+<div></div>
+<span></span>
+<!-- lists -->
+<!-- unordered lists -->
+<ul>
+<li></li>
+</ul>
+<!-- ordered lists -->
+<ol>
+<li></li>
+</ol>
+<!-- inline elements -->
+<!-- images -->
+<img src="cat.png" alt="Surprised Cat" />
+<!-- links (or anchors) -->
+<a href="index.html">Home</a>
+<!-- tables -->
+<!-- simple table code example -->
+<table>
+    <tr>
+        <th>header title r1 c1</th>
+        <th>header r1 c2</th>
+    </tr>
+    <tr>
+        <td>cell value r2 c1</td>
+        <td>cell value r2 c2</td>
+    </tr>
+    <tr>
+        <td>cell value r3 c1</td>
+        <td>cell value r3 c2</td>
+    </tr>
+</table>
+<p>for more complex tables see <a href="https://html.com/tables/">here</a></p>
+<!-- forms -->
+<form></form>
+<label></label>
+<input>
+<textarea</textarea>
+<form action="/my-handling-form-page" method="post">
+    <ul>
+        <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name">
+        </li>
+        <li>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_email">
+        </li>
+        <li>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+        </li>
+        <li class="button">
+            <button type="submit">Send your message</button>
+        </li>
+    </ul>
+</form>
+<p>for more information on forms see <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form">here</a></p>
+<!-- buttons -->
+<button name="button">Press me</button>
+<button name="favorite">
+    <svg aria-hidden="true" viewBox="0 0 10 10"><path d="M7 9L5 8 3 9V6L1 4h3l1-3 1 3h3L7 6z"/></svg>
+    Add to favorites
+  </button>
+  <!-- buttons are recommended to be a minimum of 44x44 CSS pixels and a space of 60pix between buttons for accessibility -->
+</body>
+</html>
